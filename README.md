@@ -28,8 +28,8 @@
 
 ### **Complexity Dimensions**
 
-1. **Type**: Tables, figures, or combined multimodal content
-2. **Domain**: 9 broad scientific fields with 170 specialized subdomains
+1. **Type**: Tables, figures, or combined multimodal contents
+2. **Domain**: 9 broad scientific fields with 170 fine-grained subdomains
 3. **Format**: LaTeX, XML, and other representations
 4. **Source**: General research papers vs. review & survey papers
 5. **Width**: Self-contained, internal, external, or mixed reference scope
@@ -51,7 +51,7 @@
 - **🎯 PLANNER**: Decomposes complex tasks into actionable subtasks and provide task-oriented planning guidance
 - **🔍 EXPERT**: Performs iterative knowledge acquisition through specialized tool execution and targeted retrieval
 - **🖋️ SOLVER**: Synthesizes accumulated knowledge to generate coherent, context-aware analysis solutions
-- **📈 CRITIC**: Assesses analysis quality through five-dimensional evaluation and provides targeted refinement feedback
+- **🔧 CRITIC**: Assesses analysis quality through five-dimensional evaluation and provides targeted refinement feedback
 
 ---
 
@@ -84,6 +84,8 @@
 ---
 
 ## 📝 Citation
+
+Thanks much for your interests!
 
 If you find this work useful, please kindly cite:
 
