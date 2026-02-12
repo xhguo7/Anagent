@@ -1,0 +1,18 @@
+# Cache
+__pycache__
+
+# Outputs
+data/
+dataset/
+outputs/
+eval_outputs/
+test_outputs/
+construct_outputs/
+magent_outputs/
+construct/arxiv/arxiv_configs/
+
+# Caches
+**/logs/
+**/caches/
+**/magent_output/
+**/agent_outputs
