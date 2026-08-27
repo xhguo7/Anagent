@@ -10,7 +10,7 @@
 &nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/💻-GitHub-green)](https://github.com/xhguo7/Anagent)
 &nbsp;&nbsp;
-[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/xuehang/anabench)
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/AI4Research/AnaBench)
 
 </div>
 
@@ -85,10 +85,10 @@ OCR additionally requires the Tesseract binary on `PATH` (`conda install -c cond
 
 ### **Dataset**
 
-Download [ANABENCH](https://huggingface.co/datasets/xuehang/anabench) and place it under `dataset/anabench/`:
+Download [ANABENCH](https://huggingface.co/datasets/AI4Research/AnaBench) and place it under `dataset/anabench/`:
 
 ```bash
-huggingface-cli download xuehang/anabench --repo-type dataset --local-dir dataset/anabench
+huggingface-cli download AI4Research/AnaBench --repo-type dataset --local-dir dataset/anabench
 ```
 
 ### **Credentials**
