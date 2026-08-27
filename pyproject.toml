@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anagent"
+version = "0.1.0"
+description = "Multi-agent scientific table and figure analysis"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Xuehang Guo" },
+    { name = "Zhiyong Lu" },
+    { name = "Tom Hope" },
+    { name = "Qingyun Wang" },
+]
+dependencies = [
+    "requests>=2.32.5",
+    "numpy>=2.2.6",
+    "tqdm>=4.67.1",
+    "beautifulsoup4>=4.14.3",
+    "pillow>=12.0.0",
+    "litellm>=1.80.11",
+    "openai>=2.14.0",
+    "torch>=2.8.0",
+    "transformers>=4.57.1",
+    "qwen-vl-utils>=0.0.14",
+    "datasets>=4.4.2",
+    "nltk>=3.9.2",
+    "rouge-score>=0.1.2",
+    "bert-score>=0.3.13",
+    "sentence-transformers>=5.2.0",
+    "PyPDF2>=3.0.1",
+    "pdfplumber>=0.11.8",
+    "pytesseract>=0.3.13",
+    "easyocr>=1.7.2",
+]
+
+[project.optional-dependencies]
+docker = ["docker>=7.0.0"]
+docx = ["python-docx>=1.1.0"]
+html2pdf = ["pdfkit>=1.0.0", "weasyprint>=62.0", "playwright>=1.45.0"]
+
+[project.urls]
+Homepage = "https://xhguo7.github.io/Anagent/"
+Repository = "https://github.com/xhguo7/Anagent"
+Paper = "https://arxiv.org/abs/2602.10081"
+
+[tool.setuptools.packages.find]
+include = ["anagent*", "evaluate*", "utils*"]

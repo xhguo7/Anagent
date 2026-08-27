@@ -1,18 +1,19 @@
-# Cache
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
 
-# Outputs
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Data
 data/
 dataset/
-outputs/
-eval_outputs/
-test_outputs/
-construct_outputs/
-magent_outputs/
-construct/arxiv/arxiv_configs/
 
-# Caches
+# Outputs
+**/agent_outputs/
+**/anagent_output/
+**/eval_outputs/
 **/logs/
 **/caches/
-**/magent_output/
-**/agent_outputs

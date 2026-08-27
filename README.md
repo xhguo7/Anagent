@@ -10,7 +10,7 @@
 &nbsp;
 [![GitHub](https://img.shields.io/badge/💻-GitHub-green)](https://github.com/xhguo7/Anagent)
 &nbsp;
-[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/xhguo7)
+[![HuggingFace](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/xuehang/anabench)
 
 </div>
 
@@ -60,31 +60,97 @@
 
 ---
 
-## 🛠️ **1. Experiment Setup**
+## 🛠️ **1. Environment Setup**
 
-### Installation
+### **Installation**
 
 ```bash
-# Coming soon
+git clone https://github.com/xhguo7/Anagent.git
+cd Anagent
+
+conda env create -f environment.yml
+conda activate anagent
 ```
+
+
+### **Optional Components**
+
+```bash
+pip install -e ".[docker]"      # Docker sandbox backend
+pip install -e ".[docx]"        # .docx / .doc input
+pip install -e ".[html2pdf]"    # HTML-to-PDF conversion
+```
+
+OCR additionally requires the Tesseract binary on `PATH` (`conda install -c conda-forge tesseract`).
+
+### **Dataset**
+
+Download [ANABENCH](https://huggingface.co/datasets/xuehang/anabench) and place it under `dataset/anabench/`:
+
+```bash
+huggingface-cli download xuehang/anabench --repo-type dataset --local-dir dataset/anabench
+```
+
+### **Credentials**
+
+Keys are read at runtime from `~/.anagent_keys`, one file per credential. Override the location with `KEY_DIR`.
+
+```bash
+mkdir -p ~/.anagent_keys
+echo "<your-key>" > ~/.anagent_keys/openai_api_key
+```
+
+- **`openai_api_key`**: OpenAI models
+- **`azure_api_key`**: Azure-hosted models
+- **`google_api_key`**, **`google_cse_id`**: web search tool
+- **`hf_hub_token`**: gated HuggingFace models
 
 ---
 
-## 🚀 **2. Quick Start**
+## 🌟 **2. ANAGENT for Scientific Table & Figure Analysis**
 
 ```bash
-# Coming soon
+bash scripts/run_anagent.sh \
+    --mode batch \
+    --test-data dataset/anabench/test.json \
+    --output-dir ./anagent_output
 ```
+
+A single instance:
+
+```bash
+bash scripts/run_anagent.sh \
+    --mode single \
+    --query "<your query>" \
+    --image <path/to/figure.png>
+```
+
+Frequently used options — run `bash scripts/run_anagent.sh --help` for the full list:
+
+- **`--planner-model`**, **`--expert-model`**, **`--solver-model`**, **`--critic-model`**: model for each agent
+- **`--expert-turns <n>`**: Expert retrieval turns
+- **`--critic-turns <n>`**: Solver-Critic refinement rounds (`0` disables the Critic)
+- **`--enable-tools <list>`**: tools available to the Expert
+- **`--max-samples <n>`**: cap the number of instances
+- **`--seed <int>`**: random seed
 
 ---
 
-## 📈 **3. Modular Optimization**
+## 🌟 **3. Evaluation**
 
-### **Supervised Finetuning**
+Rule-based metrics:
 
 ```bash
-# Coming soon
+bash scripts/run_eval.sh --infer-output <path>/batch_results.json
 ```
+
+LLM-as-judge:
+
+```bash
+bash scripts/run_judge_eval.sh --json-path <path>/batch_results.json
+```
+
+The two evaluations are reported separately.
 
 ---
 
@@ -107,8 +173,6 @@ If you find this work useful, please kindly cite:
 ---
 
 <div align="center">
-
-© 2026 | College of William & Mary, Allen Institute for AI, NIH
 
 🥰 Thanks much for your interest!
 
