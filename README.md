@@ -3,14 +3,14 @@
 <div align="center">
 
 [![Homepage](https://img.shields.io/badge/🏠-Homepage-blue)](https://xhguo7.github.io/Anagent/)
-&nbsp;
+&nbsp;&nbsp;
 [![arXiv](https://img.shields.io/badge/arXiv:2602.10081-arXiv-red)](https://arxiv.org/abs/2602.10081)
-&nbsp;
+&nbsp;&nbsp;
 [![arXiv](https://img.shields.io/badge/📄-Paper-pink)](https://arxiv.org/pdf/2602.10081)
-&nbsp;
+&nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/💻-GitHub-green)](https://github.com/xhguo7/Anagent)
-&nbsp;
-[![HuggingFace](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/xuehang/anabench)
+&nbsp;&nbsp;
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/xuehang/anabench)
 
 </div>
 
