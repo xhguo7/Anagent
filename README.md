@@ -161,12 +161,18 @@ Thanks much for your interests!
 If you find this work useful, please kindly cite:
 
 ```bibtex
-@article{guo2026anagent,
-  title={ANAGENT For Enhancing Scientific Table & Figure Analysis},
-  author={Guo, Xuehang and Lu, Zhiyong and Hope, Tom and Wang, Qingyun},
-  journal={arXiv preprint arXiv:2602.10081},
-  url={https://arxiv.org/abs/2602.10081},
-  year={2026}
+@inproceedings{guo-etal-2026-anabench,
+    title = "{A}na{B}ench for Enhancing Scientific Table {\&} Figure Analysis",
+    author = "Guo, Xuehang  and  Lu, Zhiyong  and  Hope, Tom  and  Wang, Qingyun",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.1454/",
+    doi = "10.18653/2026.emnlp-main.1454",
+    pages = "33199--33269",
+    ISBN = "979-8-89176-459-0"
 }
 ```
 
