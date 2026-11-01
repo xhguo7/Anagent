@@ -158,7 +158,7 @@ The two evaluations are reported separately.
 
 Thanks much for your interests!
 
-If you find this work useful, please kindly cite:
+If you find our work useful, please kindly cite:
 
 ```bibtex
 @inproceedings{guo-etal-2026-anabench,
